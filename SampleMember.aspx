@@ -17,13 +17,15 @@
             <asp:TextBox ID="tb_Pass" runat="server" Width="200px" Height="15px" TextMode="Password"></asp:TextBox></p>
 
             <p class="Font-Size:X-Large"> 興趣
-               <asp:CheckBox ID="CheckBox1" runat="server" Text="看書" ValidationGroup="sex" />
-               <asp:CheckBox ID="CheckBox2" runat="server" Text="打電動" ValidationGroup="sex" />
-               <asp:CheckBox ID="CheckBox3" runat="server" Text="其他" ValidationGroup="sex"/>
+               <asp:CheckBox ID="CheckBox1" runat="server" Text="看書" ValidationGroup="sex" AutoPostBack="True" />
+               <asp:CheckBox ID="CheckBox2" runat="server" Text="打電動" ValidationGroup="sex" AutoPostBack="True" />
+               <asp:CheckBox ID="CheckBox3" runat="server" Text="其他" ValidationGroup="sex" AutoPostBack="True" />
             </p>
+
             <p class="Font-Size:X-Large">其他連結
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://aws.amazon.com/tw/ " ImageUrl="aws.png"></asp:HyperLink></p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://aws.amazon.com/tw/ " ImageUrl="aws.png" Height="30px" Width="30px" ></asp:HyperLink></p>
             <asp:Button ID="bt_Next" runat="server" Text="送出" Width="80px" Height="30px" PostBackUrl="~/Sample1Com.aspx"/>
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         </div>
     </form>
 </body>

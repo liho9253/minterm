@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Sample1Com.aspx" />
+    <Content Include="Sample2.aspx" />
     <Content Include="SampleMember.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -83,6 +84,13 @@
     </Compile>
     <Compile Include="Sample1Com.aspx.designer.cs">
       <DependentUpon>Sample1Com.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample2.aspx.cs">
+      <DependentUpon>Sample2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample2.aspx.designer.cs">
+      <DependentUpon>Sample2.aspx</DependentUpon>
     </Compile>
     <Compile Include="SampleMember.aspx.cs">
       <DependentUpon>SampleMember.aspx</DependentUpon>

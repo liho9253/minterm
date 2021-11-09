@@ -14,9 +14,10 @@ namespace minterm
             String temp = "";
             temp += Request.Form.Get("tb_Acc")+"<br/>";
             temp += Request.Form.Get("tb_Pass")+"<br/>";
-            temp += Request.Form.Get("CheckBox1");
+            temp += Request.Form.Get("lb_1") + "<br/>";
+
             for (int i = 1;i <= 3;i++) {
-                
+                temp += Request.QueryString.Get("CheckBox1") + "<br/>";
             }
             lb_Res.Text = temp;
 

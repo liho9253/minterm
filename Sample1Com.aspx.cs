@@ -14,11 +14,18 @@ namespace minterm
             String temp = "";
             temp += Request.Form.Get("tb_Acc")+"<br/>";
             temp += Request.Form.Get("tb_Pass")+"<br/>";
+            if (Request.Form.Get("CheckBox1") == "on") {
+                temp += "看書" + "<br/>";
+            }
+            if (Request.Form.Get("CheckBox2") == "on"){
+                temp += "打電動" + "<br/>";
+            }
+            if (Request.Form.Get("CheckBox3") == "on"){
+                temp += "其他" + "<br/>";
+            }
+            
             temp += Request.Form.Get("lb_1") + "<br/>";
 
-            for (int i = 1;i <= 3;i++) {
-                temp += Request.QueryString.Get("CheckBox1") + "<br/>";
-            }
             lb_Res.Text = temp;
 
 

@@ -17,11 +17,9 @@
             <asp:TextBox ID="tb_Pass" runat="server" Width="200px" Height="15px" TextMode="Password"></asp:TextBox></p>
 
             <p class="Font-Size:X-Large"> 興趣
-                <asp:CheckBoxList ID="CheckBoxList1" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                    <asp:ListItem Value="lb_1" Text="lb_1">看書</asp:ListItem>
-                    <asp:ListItem Value="lb_2">打電動</asp:ListItem>
-                    <asp:ListItem Value="lb_3">其他</asp:ListItem>
-                </asp:CheckBoxList>
+                <asp:CheckBox ID="CheckBox1" runat="server" Text="看書" ValidationGroup="G1" />
+                <asp:CheckBox ID="CheckBox2" runat="server" Text="打電動" ValidationGroup="G1" />
+                <asp:CheckBox ID="CheckBox3" runat="server" Text="其他" ValidationGroup="G1"  />
             </p>
 
             <p class="Font-Size:X-Large">其他連結
